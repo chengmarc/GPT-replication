@@ -10,6 +10,7 @@ os.chdir(script_path)
 
 import torch, NN
 from Tokenizer import tokenizer, get_dictionary
+from Embedding import Embedding
 from MaskDropout import Dropout
 from LayerNorm import CustomLayerNorm
 from TransformerBlock import TransformerBlock
@@ -45,8 +46,8 @@ class CustomGPT(NN.Module):
     
     def __init__(self, config):
         super().__init__()
-        self.tok_emb = NN.Embedding(config["vocab_size"], config["emb_dim"])
-        self.pos_emb = NN.Embedding(config["context_length"], config["emb_dim"])
+        self.tok_emb = Embedding(config["vocab_size"], config["emb_dim"])
+        self.pos_emb = Embedding(config["context_length"], config["emb_dim"])
         self.drop_emb = Dropout(config["dropout"])
         
         self.transformer = NN.Sequential(*[TransformerBlock(config) for _ in range(config["layers"])])
