@@ -3,6 +3,12 @@
 Created on Mon Nov 25 18:51:07 2024
 
 @author: Admin
+
+[1] Jimmy Lei Ba, Jamie Ryan Kiros, Geoffrey E. Hinton.
+
+    Layer Normalization
+    https://arxiv.org/pdf/1607.06450
+    
 """
 import os
 script_path = os.path.dirname(os.path.realpath(__file__))

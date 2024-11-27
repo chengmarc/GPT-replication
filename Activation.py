@@ -3,6 +3,12 @@
 Created on Mon Nov 25 18:52:49 2024
 
 @author: Admin
+
+[1] Dan Hendrycks, Kevin Gimpel.
+
+    Gaussian Error Linear Units (GELUs)
+    https://arxiv.org/pdf/1606.08415
+
 """
 import os
 script_path = os.path.dirname(os.path.realpath(__file__))

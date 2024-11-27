@@ -3,6 +3,13 @@
 Created on Wed Nov 20 09:45:19 2024
 
 @author: uzcheng
+
+[1] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, 
+    Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin.
+
+    Attention Is All You Need
+    https://arxiv.org/pdf/1706.03762
+    
 """
 import os
 script_path = os.path.dirname(os.path.realpath(__file__))

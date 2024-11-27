@@ -3,6 +3,12 @@
 Created on Mon Nov 25 19:11:22 2024
 
 @author: Admin
+
+[1] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+
+    Deep Residual Learning for Image Recognition (Shortcut)
+    https://arxiv.org/abs/1512.03385v1
+    
 """
 import os
 script_path = os.path.dirname(os.path.realpath(__file__))

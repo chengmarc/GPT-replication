@@ -10,6 +10,8 @@ os.chdir(script_path)
 
 import torch.nn as nn
 
+
+# %%
 class Module(nn.Module): pass
 
 class ModuleList(nn.ModuleList): pass
@@ -31,4 +33,44 @@ class MultiheadAttention(nn.MultiheadAttention): pass
 class ReLU(nn.ReLU): pass
 
 class GELU(nn.GELU): pass
+
+
+# %%
+"""
+───main
+    │
+    ├───Typewriter
+    ├───Tokenizer
+    ├───DataLoader
+    └───GPT
+        │
+        ├───Tokenizer
+        ├───Embedding
+        │   │
+        │   ├───Tokenizer
+        │   └───DataLoader
+        │    
+        ├───MaskDropout
+        │   │
+        │   └───Softmax
+        │    
+        ├───TransformerBlock
+        │   │
+        │   ├───MultiHeadAttention
+        │   │   │
+        │   │   └───MaskDropout
+        │   │       │
+        │   │       └───Softmax
+        │   │
+        │   ├───Activation
+        │   ├───LayerNorm
+        │   └───MaskDropout            
+        │       │
+        │       └───Softmax
+        │
+        └───LayerNorm
+
+SelfAttention is not used
+NN contains selected class from torch.nn
+"""
 

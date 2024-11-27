@@ -3,6 +3,12 @@
 Created on Mon Nov 25 19:21:20 2024
 
 @author: Admin
+
+[1] Philip Gage.
+
+    A new algorithm for data compression (Byte Pair Encoding)
+    https://dl.acm.org/doi/abs/10.5555/177910.177914
+
 """
 import os
 script_path = os.path.dirname(os.path.realpath(__file__))
