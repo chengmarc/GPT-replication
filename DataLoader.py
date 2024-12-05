@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Nov 26 20:43:03 2024
+@author: chengmarc
+@github: https://github.com/chengmarc
 
-@author: Admin
 """
 import os
 script_path = os.path.dirname(os.path.realpath(__file__))

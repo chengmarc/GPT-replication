@@ -1,8 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Jul 31 13:18:02 2024
+@author: chengmarc
+@github: https://github.com/chengmarc
 
-@author: uzcheng
+[1] Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov.
+
+    Dropout: A Simple Way to Prevent Neural Networks from Overfitting
+    https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf
+
 """
 import os
 script_path = os.path.dirname(os.path.realpath(__file__))

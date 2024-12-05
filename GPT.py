@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Nov 25 19:20:48 2024
-
-@author: Admin
+@author: chengmarc
+@github: https://github.com/chengmarc
 
 [1] Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever.
 

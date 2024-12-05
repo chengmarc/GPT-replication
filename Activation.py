@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Nov 25 18:52:49 2024
-
-@author: Admin
+@author: chengmarc
+@github: https://github.com/chengmarc
 
 [1] Dan Hendrycks, Kevin Gimpel.
 

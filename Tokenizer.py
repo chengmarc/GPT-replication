@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Nov 25 19:21:20 2024
-
-@author: Admin
+@author: chengmarc
+@github: https://github.com/chengmarc
 
 [1] Philip Gage.
 

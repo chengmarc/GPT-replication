@@ -1,8 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Jul 24 11:07:54 2024
+@author: chengmarc
+@github: https://github.com/chengmarc
 
-@author: uzcheng
+[1] Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, Jeffrey Dean.
+
+    Distributed Representations of Words and Phrases and their Compositionality
+    https://arxiv.org/abs/1310.4546
+    
 """
 import os
 script_path = os.path.dirname(os.path.realpath(__file__))

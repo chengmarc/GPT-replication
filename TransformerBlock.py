@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Nov 25 19:11:22 2024
-
-@author: Admin
+@author: chengmarc
+@github: https://github.com/chengmarc
 
 [1] Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever.
 
     Language Models are Unsupervised Multitask Learners
     https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
-    
+
 """
 import os
 script_path = os.path.dirname(os.path.realpath(__file__))

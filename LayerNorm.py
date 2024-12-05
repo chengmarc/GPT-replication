@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Nov 25 18:51:07 2024
-
-@author: Admin
+@author: chengmarc
+@github: https://github.com/chengmarc
 
 [1] Jimmy Lei Ba, Jamie Ryan Kiros, Geoffrey E. Hinton.
 

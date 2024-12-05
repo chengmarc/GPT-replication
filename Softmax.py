@@ -1,8 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed May 22 08:59:50 2024
+@author: chengmarc
+@github: https://github.com/chengmarc
 
-@author: uzcheng
+[1] Y. Lecun, L. Bottou, Y. Bengio, P. Haffner.
+
+    Gradient-based learning applied to document recognition
+    http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf
+    
 """
 import os
 script_path = os.path.dirname(os.path.realpath(__file__))

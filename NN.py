@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Nov 26 20:14:26 2024
+@author: chengmarc
+@github: https://github.com/chengmarc
 
-@author: Admin
 """
 import os
 script_path = os.path.dirname(os.path.realpath(__file__))
@@ -37,7 +37,7 @@ class GELU(nn.GELU): pass
 
 # %%
 """
-───main
+───0_main
     │
     ├───Typewriter
     ├───Tokenizer
@@ -69,8 +69,9 @@ class GELU(nn.GELU): pass
         │       └───Softmax
         │
         └───LayerNorm
+───1_chat
 
-SelfAttention is not used
-NN contains selected class from torch.nn
+Note 1: SelfAttention is not used
+Note 2: NN contains selected class from torch.nn
 """
 

@@ -1,8 +1,14 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Jul 24 11:06:14 2024
+@author: chengmarc
+@github: https://github.com/chengmarc
 
-@author: uzcheng
+[1] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, 
+    Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin.
+
+    Attention Is All You Need
+    https://arxiv.org/pdf/1706.03762
+
 """
 import os
 script_path = os.path.dirname(os.path.realpath(__file__))

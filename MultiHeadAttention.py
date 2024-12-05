@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Nov 20 09:45:19 2024
-
-@author: uzcheng
+@author: chengmarc
+@github: https://github.com/chengmarc
 
 [1] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, 
     Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin.
