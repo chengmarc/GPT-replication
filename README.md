@@ -52,7 +52,7 @@
     A new algorithm for data compression (Byte Pair Encoding)
     https://dl.acm.org/doi/abs/10.5555/177910.177914
 
-### Dataset References ###
+### Dataset Reference ###
 [10] William Shakespeare - Project Gutenberg
 
     The Complete Works of William Shakespeare
