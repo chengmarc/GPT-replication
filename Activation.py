@@ -8,6 +8,11 @@ Created on Mon Nov 25 18:52:49 2024
 
     Gaussian Error Linear Units (GELUs)
     https://arxiv.org/pdf/1606.08415
+    
+[2] Abien Fred Agarap.
+
+    Deep Learning using Rectified Linear Units (ReLU)
+    https://arxiv.org/abs/1803.08375
 
 """
 import os

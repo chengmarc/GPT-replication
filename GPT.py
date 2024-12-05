@@ -3,6 +3,12 @@
 Created on Mon Nov 25 19:20:48 2024
 
 @author: Admin
+
+[1] Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever.
+
+    Language Models are Unsupervised Multitask Learners
+    https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+    
 """
 import os
 script_path = os.path.dirname(os.path.realpath(__file__))
@@ -103,16 +109,13 @@ def generate(model, idx, max_new_tokens, context_size):
         # Get the idx of the vocab entry with the highest probability value
         idx_next = torch.argmax(probas, dim=-1, keepdim=True)  # (batch, 1)
 
-        # Append sampled index to the running sequence
-        idx = torch.cat((idx, idx_next), dim=1)  # (batch, n_tokens+1)
-
-    return idx
+    return idx_next
 
 
 # %% Demonstration
 if __name__ == "__main__":
     
-    example = "This is an example of "    
+    example = "This is an example of "
     encoded = tokenizer.encode(example)    
     idx = torch.tensor(encoded).unsqueeze(0)
     

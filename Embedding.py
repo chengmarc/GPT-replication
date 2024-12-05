@@ -14,11 +14,13 @@ from DataLoader import create_dataloader
 
 
 # %%
-enc_text = tokenizer.encode("This is an example")
-context_size = 3
-for i in range(1, context_size+1):
-    context, desired = enc_text[:i], enc_text[i]
-    print(tokenizer.decode(context), "---->", tokenizer.decode([desired]))
+if __name__ == "__main__":
+    
+    enc_text = tokenizer.encode("This is an example")
+    context_size = 3
+    for i in range(1, context_size+1):
+        context, desired = enc_text[:i], enc_text[i]
+        print(tokenizer.decode(context), "---->", tokenizer.decode([desired]))
 
 
 # %%

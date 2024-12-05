@@ -18,7 +18,7 @@ import re, tiktoken
 
 
 # %%
-file_path = "the-verdict.txt"
+file_path = "shakespeare.txt"
 with open(os.path.join(script_path ,file_path), "r", encoding="utf-8") as file:
     raw_text = file.read()
 

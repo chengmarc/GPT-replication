@@ -4,10 +4,10 @@ Created on Mon Nov 25 19:11:22 2024
 
 @author: Admin
 
-[1] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+[1] Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever.
 
-    Deep Residual Learning for Image Recognition (Shortcut)
-    https://arxiv.org/abs/1512.03385v1
+    Language Models are Unsupervised Multitask Learners
+    https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
     
 """
 import os
