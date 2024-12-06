@@ -65,12 +65,12 @@ split_idx = int(train_ratio * len(raw_text))
 train_data = raw_text[:split_idx]
 valid_data = raw_text[split_idx:]
 
-train_loader = create_dataloader(train_data, batch_size=2,
+train_loader = create_dataloader(train_data, batch_size=32,
                                  max_length=config["context_length"], 
                                  stride=config["context_length"],
                                  drop_last=True, shuffle=True, num_workers=0)
 
-valid_loader = create_dataloader(valid_data, batch_size=2,
+valid_loader = create_dataloader(valid_data, batch_size=32,
                                  max_length=config["context_length"], 
                                  stride=config["context_length"],
                                  drop_last=False, shuffle=False, num_workers=0)
@@ -113,16 +113,6 @@ def calc_loss_loader(data_loader, model, device, num_batches=None):
     return total_loss / num_batches
 
 
-# %% CUDA acceleration
-if torch.cuda.is_available(): 
-    device = torch.device("cuda")
-else: 
-    device = torch.device("cpu")
-
-_ = model.to(device)
-print(f"Using {device} device.")
-
-
 # %%
 def print_sample(model, tokenizer, device, start_context):
     
@@ -132,7 +122,7 @@ def print_sample(model, tokenizer, device, start_context):
     with torch.no_grad():
         token_ids = generate(model=model, idx=encoded, max_new_tokens=50, context_size=context_size)
     decoded_text = token_ids_to_text(token_ids, tokenizer)
-    typewrite("\n[Sample Text] " + start_context + decoded_text.replace("\n", " ") + "\n\n")
+    typewrite("\n[Sample Text] " + decoded_text.replace("\n", " ") + "\n\n")
     model.train()
     
 def evaluate(model, train_loader, val_loader, device, eval_iter):
@@ -178,7 +168,29 @@ def train(model, train_loader, val_loader, optimizer, device, num_epochs,
 
     return train_losses, valid_losses, track_tokens_seen
 
-    
+
+# %%
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:128"
+
+model_list = [f'./model/{x}' for x in os.listdir('./model')]
+if model_list:
+    model_list.sort(key=lambda x: os.path.getmtime(x))
+
+    print(f'Loading {model_list[-1]}...')
+    model.load_state_dict(torch.load(model_list[-1])) #load latest model
+    model.eval()
+
+
+# %% CUDA acceleration
+if torch.cuda.is_available(): 
+    device = torch.device("cuda")
+else: 
+    device = torch.device("cpu")
+
+_ = model.to(device)
+print(f"Using {device} device.")
+
+
 # %%
 num_epochs = 10
 optimizer = torch.optim.AdamW(model.parameters(), lr=0.0004, weight_decay=0.1)

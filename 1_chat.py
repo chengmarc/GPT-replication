@@ -24,6 +24,16 @@ if model_list:
     model.eval()
 
 
+# %% CUDA acceleration
+if torch.cuda.is_available(): 
+    device = torch.device("cuda")
+else: 
+    device = torch.device("cpu")
+
+_ = model.to(device)
+print(f"Using {device} device.")
+
+
 # %%
 while True:
     
@@ -31,13 +41,13 @@ while True:
     if user_input == "stop": 
         break
     
-    encoded = tokenizer.encode(f"User: {user_input} AI: ")
-    idx = torch.tensor(encoded).unsqueeze(0)
+    encoded = tokenizer.encode(f"Voldemort: {user_input}. Harry: ")
+    idx = torch.tensor(encoded).unsqueeze(0).to(device)
     
-    token_ids = generate(model=model, idx=idx, max_new_tokens=25, context_size=50)
+    token_ids = generate(model=model, idx=idx, max_new_tokens=100, context_size=50)
     
     flat = token_ids.squeeze(0) # remove batch dimension
-    decoded_text = "AI:\t" + tokenizer.decode(flat.tolist()) + "\n"
+    decoded_text = tokenizer.decode(flat.tolist()) + "\n"
     
-    typewrite(decoded_text)
+    typewrite("AI:\t\t" + decoded_text.split("Harry:")[1])
 
