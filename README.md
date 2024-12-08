@@ -6,60 +6,59 @@
 
 ### Theoretic References ###
 
-[1] Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever.
+[1] Language Models are Unsupervised Multitask Learners
 
-    Language Models are Unsupervised Multitask Learners
+    Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever.
     https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 
-[2] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, 
-    Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin.
+[2] Attention Is All You Need
 
-    Attention Is All You Need
+    Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin.
     https://arxiv.org/pdf/1706.03762
     
-[3] Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, Jeffrey Dean.
+[3] Distributed Representations of Words and Phrases and their Compositionality
 
-    Distributed Representations of Words and Phrases and their Compositionality
+    Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, Jeffrey Dean.
     https://arxiv.org/abs/1310.4546
     
-[4] Y. Lecun, L. Bottou, Y. Bengio, P. Haffner.
+[4] Gradient-based learning applied to document recognition
 
-    Gradient-based learning applied to document recognition
+    Y. Lecun, L. Bottou, Y. Bengio, P. Haffner.
     http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf
     
-[5] Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov.
+[5] Dropout: A Simple Way to Prevent Neural Networks from Overfitting
 
-    Dropout: A Simple Way to Prevent Neural Networks from Overfitting
+    Nitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, Ruslan Salakhutdinov.
     https://www.cs.toronto.edu/~rsalakhu/papers/srivastava14a.pdf
     
-[6] Jimmy Lei Ba, Jamie Ryan Kiros, Geoffrey E. Hinton.
+[6] Layer Normalization
 
-    Layer Normalization
+    Jimmy Lei Ba, Jamie Ryan Kiros, Geoffrey E. Hinton.
     https://arxiv.org/pdf/1607.06450
     
-[7] Dan Hendrycks, Kevin Gimpel.
+[7] Gaussian Error Linear Units (GELUs)
 
-    Gaussian Error Linear Units (GELUs)
+    Dan Hendrycks, Kevin Gimpel.
     https://arxiv.org/pdf/1606.08415
     
-[8] Abien Fred Agarap.
+[8] Deep Learning using Rectified Linear Units (ReLU)
 
-    Deep Learning using Rectified Linear Units (ReLU)
+    Abien Fred Agarap.
     https://arxiv.org/abs/1803.08375
     
-[9] Philip Gage.
+[9] A new algorithm for data compression (Byte Pair Encoding)
 
-    A new algorithm for data compression (Byte Pair Encoding)
+    Philip Gage.
     https://dl.acm.org/doi/abs/10.5555/177910.177914
 
 ### Dataset Reference ###
-[10] William Shakespeare - Project Gutenberg
+[10] Harry Potter all books (preprocessed)
 
-    The Complete Works of William Shakespeare
-    https://www.gutenberg.org/ebooks/100
+    Mateusz Kudła
+    https://www.kaggle.com/datasets/moxxis/harry-potter-lstm
     
 ### Code Reference ### 
-[11] Sebastian Raschka 
+[11] Build a Large Language Model (From Scratch)
 
-    Build a Large Language Model (From Scratch)
+    Sebastian Raschka 
     https://github.com/rasbt/LLMs-from-scratch
