@@ -192,7 +192,7 @@ print(f"Using {device} device.")
 
 
 # %%
-num_epochs = 10
+num_epochs = 100
 optimizer = torch.optim.AdamW(model.parameters(), lr=0.0004, weight_decay=0.1)
 train_losses, valid_losses, tokens_seen = train(
     model, train_loader, valid_loader, optimizer, device, num_epochs, 
